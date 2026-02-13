@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Collector Registration</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>   
+
+
+<body>
+
+<h2>Register as Collection Partner</h2>
+
+Name:<br>
+<input id="cname"><br><br>
+
+Phone:<br>
+<input id="cphone"><br><br>
+
+Area:<br>
+<select id="carea">
+<option>KSD</option>
+<option>TVM</option>
+<option>KOZHIKODE</option>
+</select>
+
+<br><br>
+
+<button onclick="registerCollector()">REGISTER</button>
+<br><br>
+<button onclick="window.location.href='dashboard.html'">
+Go to Dashboard
+</button>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scrap Provider</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+
+<body>
+
+    <h2>Scrap Pickup Request</h2>
+
+    Provider Name:<br>
+    <input id="pname"><br><br>
+
+    <h3>Scrap Items</h3>
+
+<div id="itemsContainer">
+
+    <div class="scrapItem">
+        <select class="stype">
+            <option>Plastic</option>
+            <option>Metal</option>
+            <option>Paper</option>
+            <option>Glass</option>
+            <option>E-Waste</option>
+        </select>
+
+        <input type="number" class="sweight" placeholder="Weight">
+
+        <select class="sunit">
+            <option>kg</option>
+            <option>g</option>
+        </select>
+    </div>
+
+</div>
+
+<br>
+
+<button onclick="addItem()">+ Add Item</button>
+
+<hr>
+
+    Area:<br>
+    <select id="parea" onchange="loadCollectors()">
+        <option value="">Select</option>
+        <option>KSD</option>
+        <option>TVM</option>
+        <option>KOZHIKODE</option>
+    </select>
+
+    <br><br>
+
+    Available Collectors:<br>
+    <select id="collectorList"></select>
+
+    <br><br>
+
+    Pickup Time:<br>
+    <input id="ptime" type="datetime-local">
+
+    <br><br>
+
+    <button onclick="submitRequest()">Submit Request</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

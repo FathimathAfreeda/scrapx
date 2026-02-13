@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SCRAPX Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+
+<body>
+
+<h1>SCRAPX</h1>
+<h2>Collector Dashboard</h2>
+
+<hr>
+
+<button onclick="loadRequests()">Load Pickup Requests</button>
+
+<br><br>
+
+<table border="1" width="100%">
+    <thead>
+        <tr>
+            <th>Provider</th>
+            <th>Scrap Type</th>
+            <th>Area</th>
+            <th>Pickup Time</th>
+            <th>Collector</th>
+        </tr>
+    </thead>
+
+    <tbody id="requestTable">
+        <!-- Data will come here -->
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
